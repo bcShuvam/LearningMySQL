@@ -9,4 +9,6 @@ select * from personal
 -- where name regexp '^[rs]'; -- It checks records either starts with r or s
 -- where name regexp '[ra]$'; -- It checks records either ends with r or s
 -- where name regexp 'r[am]'; -- It checks records by combining ra and rm seperately
-where name regexp '[a-m]r'; -- It checks records by combining ra and rm seperately
+-- where name regexp '[a-m]r'; -- It checks records by combining ra and rm seperately
+-- where name regexp '[^a]khan$'; -- It checks records by combining ra and rm seperately
+where name like 'a%' and name like '%khan'; -- It checks records by combining ra and rm seperately
